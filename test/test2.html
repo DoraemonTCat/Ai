@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Viewer</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div id="content">
+
+    
+  </div>
+
+  <script>
+    // โหลดไฟล์ Markdown และแปลงเป็น HTML
+    fetch('../output/report.md') // ชื่อไฟล์ Markdown
+      .then(response => response.text())
+      .then(markdown => {
+        const htmlContent = marked.parse(markdown); // แปลง Markdown เป็น HTML
+        document.getElementById('content').innerHTML = htmlContent; // แสดงผลใน div
+      })
+      .catch(error => console.error('Error fetching markdown:', error));
+  </script>
+</body>
+</html>

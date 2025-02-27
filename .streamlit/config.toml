@@ -1,0 +1,11 @@
+# .streamlit/config.toml
+[server]
+runOnsave = true
+[theme]
+primaryColor = "#ff66b2"  # สีชมพู
+backgroundColor = "#fff0f5"  # พื้นหลังสีชมพูอ่อน
+secondaryBackgroundColor = "#ffe6f0"  # พื้นหลังรองที่เป็นสีชมพูอ่อน
+textColor = "#4d004d"  # สีตัวอักษรเข้มที่เข้ากับธีม
+font = "monospace" 
+[client]
+fullscreen = true
