@@ -16,8 +16,7 @@ from crewai.project import crew
 from dotenv import load_dotenv
 load_dotenv()
 #!/usr/bin/env python
-openai_api_key = os.getenv("GEMINI_API_KEY")
-
+openai_api_key = os.getenv("OPENAI_API_KEY") 
 
 warnings.filterwarnings("ignore", category=SyntaxWarning, module="pysbd")
 st.set_page_config(page_title="AI แนะนำสถานที่ท่องเที่ยวภาคตะวันตก", layout="wide")  # ตั้งค่าเป็น Wide Mode
